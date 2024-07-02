@@ -26,67 +26,155 @@
       crossorigin="anonymous"
     ></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
-    <!-- Javascript -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- JQUERY -->
+    <script src="src/jquery-3.7.1.js"></script>
     <script src="src/main.js"></script>
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header">
       <a href="#" title="메인페이지로 바로가기">
-        <img src="images/logo.png" alt="메인로고" />
+        <img class="header__logo__img" src="images/logo.png" alt="메인로고" />
       </a>
-      <ul>
+      <nav class="header__navi">
+        <ul class="header__nav">
+          <li class="header__nav__item">
+            <a class="header__nav__onedepth" href="javascript:;">초가집</a>
+            <ul class="header__nav__sub">
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">큰채</a>
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">별채</a>
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">사랑채</a>
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">뜰채</a>
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">풀잎채</a>
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">하늘채</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav__item">
+            <a class="header__nav__onedepth" href="javascript:;">예약</a>
+            <ul class="header__nav__sub">
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >예약안내</a
+                >
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >숙소가격</a
+                >
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >예약현황</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav__item">
+            <a class="header__nav__onedepth" href="javascript:;">안내</a>
+            <ul class="header__nav__sub">
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">소개</a>
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >이용안내</a
+                >
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >오시는길</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav__item">
+            <a class="header__nav__onedepth" href="javascript:;">먹거리</a>
+            <ul class="header__nav__sub">
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >주변마트</a
+                >
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >주변맛집</a
+                >
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >추천메뉴</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav__item">
+            <a class="header__nav__onedepth" href="javascript:;">볼거리</a>
+            <ul class="header__nav__sub">
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >숙소전경</a
+                >
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >초가집근황</a
+                >
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">주변</a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav__item">
+            <a class="header__nav__onedepth" href="javascript:;">문의</a>
+            <ul class="header__nav__sub">
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">문의</a>
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;"
+                  >자주묻는질문</a
+                >
+              </li>
+              <li class="header__nav__sub__item">
+                <a class="header__nav__twodepth" href="javascript:;">SNS계정</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <ul class="header__sidemenu">
         <li>
-          <a href="javascript:;">초가집</a>
-          <ul>
-            <li><a href="javascript:;">큰채</a></li>
-            <li><a href="javascript:;">별채</a></li>
-            <li><a href="javascript:;">사랑채</a></li>
-            <li><a href="javascript:;">뜰채</a></li>
-            <li><a href="javascript:;">풀잎채</a></li>
-            <li><a href="javascript:;">하늘채</a></li>
-          </ul>
+          <a href="javascript:;">
+            <img
+              class="header__sidemenu__img"
+              src="images/search.png"
+              alt="검색 아이콘"
+            />
+          </a>
         </li>
         <li>
-          <a href="javascript:;">예약</a>
-          <ul>
-            <li><a href="javascript:;">예약안내</a></li>
-            <li><a href="javascript:;">숙소가격</a></li>
-            <li><a href="javascript:;">예약현황</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:;">안내</a>
-          <ul>
-            <li><a href="javascript:;">소개</a></li>
-            <li><a href="javascript:;">이용안내</a></li>
-            <li><a href="javascript:;">오시는길</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:;">먹거리</a>
-          <ul>
-            <li><a href="javascript:;">주변마트</a></li>
-            <li><a href="javascript:;">주변맛집</a></li>
-            <li><a href="javascript:;">추천메뉴</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:;">볼거리</a>
-          <ul>
-            <li><a href="javascript:;">숙소전경</a></li>
-            <li><a href="javascript:;">초가집근황</a></li>
-            <li><a href="javascript:;">주변</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="javascript:;">문의</a>
-          <ul>
-            <li><a href="javascript:;">문의</a></li>
-            <li><a href="javascript:;">자주묻는질문</a></li>
-            <li><a href="javascript:;">SNS계정</a></li>
-          </ul>
+          <a href="javascript:;">
+            <img
+              class="header__sidemenu__img"
+              src="images/mypage.png"
+              alt="마이페이지 아이콘"
+            />
+          </a>
         </li>
       </ul>
     </header>
@@ -94,7 +182,7 @@
     <!-- Main -->
     <main>
       <!-- Home 슬라이드 -->
-      <section>
+      <section id="home">
         <ul>
           <li><img src="images/main1.jpg" alt="메인 슬라이드 사진" /></li>
           <li><img src="images/main2.jpg" alt="메인 슬라이드 사진2" /></li>
