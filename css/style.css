@@ -6,6 +6,9 @@
   --color-accent: #c9c59f;
   --color-accent-varient: #4b4b43;
   --color-text: #000000;
+
+  /* Size */
+  --size-max-width: 1200px;
 }
 
 /* Header */
@@ -74,6 +77,18 @@
   width: 30px;
 }
 
+/* Common */
+.section {
+  padding: 4rem;
+  text-align: center;
+}
+
+.title {
+  margin: 1rem 0;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
 /* Home 슬라이드 */
 #home {
   width: 100%;
@@ -96,4 +111,49 @@
 
 .home__slide__item {
   position: absolute;
+}
+
+/* 이용안내 */
+#info {
+  background-color: var(--color-primary);
+}
+
+.info__title {
+  position: relative;
+}
+
+.info__title::before,
+.info__title::after {
+  content: "";
+  position: absolute;
+  top: 0.7rem;
+  width: 250px;
+  height: 3px;
+  background-color: var(--color-accent);
+}
+.info__title::before {
+  left: 60%;
+}
+.info__title::after {
+  right: 60%;
+}
+
+.info__detail {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2.5rem 0;
+}
+
+.info__detail__img {
+  width: 80px;
+  padding: 20px;
+  box-sizing: content-box;
+  background-color: #fff;
+  border: 1px solid var(--color-accent);
+  border-radius: 40%;
+}
+
+.info__detail__text {
+  line-height: 23px;
+  padding: 1rem 0;
 }
