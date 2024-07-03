@@ -261,6 +261,7 @@
   justify-content: space-around;
   padding: 2rem;
   border-top: 1px solid rgba(83, 83, 83, 0.5);
+  line-height: 20px;
 }
 
 .address > li {
@@ -283,7 +284,58 @@
 .arrow__img {
   width: 3rem;
   padding: 0.5rem;
-  border: 2px solid #c6c29d;
+  border: 2px solid var(--color-accent);
   background-color: rgba(255, 255, 255, 0.9);
   box-sizing: content-box;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--color-accent-varient);
+  color: #fff;
+}
+
+.footer__tos__list {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 10px;
+}
+
+.footer__tos__list > li:hover {
+  text-decoration: underline;
+}
+
+.footer__tos__list > li > a {
+  color: #fff;
+}
+
+.footer__info {
+  padding: 2rem 0;
+  line-height: 25px;
+}
+
+.footer__copyright {
+  color: #b4b4af;
+}
+
+.footer__snsicon {
+  width: 1.7rem;
+}
+
+.footer__sns__list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  gap: 10px;
+}
+
+.footer__sns__list__icon {
+  padding: 0.5rem 0.6rem;
+  background-color: #fff;
+  border: 1px solid var(--color-accent);
+  border-radius: 50%;
 }
