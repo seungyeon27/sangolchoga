@@ -20,6 +20,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/6166fad830.js"
@@ -183,13 +189,13 @@
     <main>
       <!-- Home 슬라이드 -->
       <section id="home">
-        <div class="home__wrap">
+        <div class="home__slide__inner">
           <ul class="home__slide">
             <li class="home__slide__item">
-              <img src="images/main2.jpg" alt="메인 슬라이드 사진2" />
+              <img src="images/main1.jpg" alt="메인 슬라이드 사진" />
             </li>
             <li class="home__slide__item">
-              <img src="images/main1.jpg" alt="메인 슬라이드 사진" />
+              <img src="images/main2.jpg" alt="메인 슬라이드 사진2" />
             </li>
             <li class="home__slide__item">
               <img src="images/main3.jpg" alt="메인 슬라이드 사진3" />
@@ -399,13 +405,17 @@
       <!-- 미리 만나보는 산골초가펜션 영상 -->
       <section id="media" class="section">
         <h2 class="media__title">미리 만나보는 산골초가펜션</h2>
-        <iframe
-          class="media__youtube"
-          src="https://www.youtube.com/embed/2JEKTGJkRac"
-          title="YouTube video player"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div class="media__wrapper">
+          <iframe
+            class="media__inner"
+            src="https://www.youtube.com/embed/2JEKTGJkRac?si=0VNtVppVhviNuBbD"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </section>
 
       <!-- Address -->
@@ -415,16 +425,16 @@
             <img class="address__logo" src="images/logo.png" alt="로고 사진" />
           </li>
           <li>
-            <p>위치</p>
+            <p class="address__title">위치</p>
             <p>강원도 영월군 북면 굴앞 마을길 64-98</p>
             <p>64-98 Gangwon-do Yeongwol-gun Buk-myeon Gulmae Village Road</p>
           </li>
           <li>
-            <p>계좌 안내</p>
+            <p class="address__title">계좌 안내</p>
             <p>00은행 000-00-00000 000(산촌초가펜션)</p>
           </li>
           <li>
-            <p>예약</p>
+            <p class="address__title">예약</p>
             <p>예약문의 000-0000-0000</p>
             <p>문의시간 09:00 - 21:00</p>
             <p>(문의시간 외에는 예약상담을 받지 않습니다.)</p>
