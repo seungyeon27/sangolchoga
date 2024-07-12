@@ -12,15 +12,15 @@ $(function () {
     });
 
   // Home 슬라이드
-  // let n = 0;
-  // function fadeInOut() {
-  //   $(".home__slide__item").stop().fadeOut();
-  //   if (n == 3) {
-  //     n = 0;
-  //   } else {
-  //     n++;
-  //   }
-  //   $(".home__slide__item").eq(n).stop().fadeIn();
-  // }
-  // let Timer = setInterval(fadeInOut, 2500);
+  let n = 0;
+  function fadeInOut() {
+    $(".home__slide__item").stop().fadeOut();
+    if (n == 3) {
+      n = 0;
+    } else {
+      n++;
+    }
+    $(".home__slide__item").eq(n).stop().fadeIn();
+  }
+  let Timer = setInterval(fadeInOut, 2500);
 });
